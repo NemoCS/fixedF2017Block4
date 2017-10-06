@@ -19,7 +19,7 @@ def move(my_history, their_history, my_score, their_score):
         return random.choice(['c', 'b', 'c'])   
     elif their_history[-1] == 'b':
         return 'b'
-    elif my_history[-2] == 'cb':
+    elif my_history[-2:-1] == 'cb' or 'Cb' or 'CB' or 'cB':
         return 'b'
     elif my_history[-2] == 'bb':
         return 'c'
