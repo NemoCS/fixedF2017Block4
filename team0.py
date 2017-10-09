@@ -1,4 +1,4 @@
-team_name = 'H@vvk$' 
+team_name = 'H@vvk$' # Only 10 chars displayed.
 strategy_name = 'Not telling you'
 strategy_description = 'I\'m gonna win'
     
