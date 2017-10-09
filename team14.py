@@ -7,28 +7,28 @@
 ####
 
 team_name = 'GOURD'
-strategy_name = 'JusticeStrategy'
-strategy_description = 'Collude until enemy betrays, then betray every time with a 50 percent chance to forgive.'
+strategy_name = 'GourdStrategy'
+strategy_description = 'Collude until enemy betrays, then betray every time with a chance to forgive.'
+import random
 class betrayed:
     pass
     #betrayed.betrayed- if betrayed, betray every time, but chance to forgive
+
+
 def move(my_history, their_history, my_score, their_score):
-    import random
     
     if len(their_history) == 0:
-        betrayed.betrayed = False
         return 'c'
+        betrayed.betrayed = False
     elif their_history[-1] == 'b':
-        betrayed.betrayed = True
         return 'b'
+        betrayed.betrayed = True
     elif their_history [-1] == 'c' and betrayed.betrayed == True:
-        if random.random() > .5:
-            betrayed.betrayed == False
+        if random.random > .5:
             return "c"
+            betrayed.betrayed == False
         else:
             return "b"
-    elif betrayed.betrayed == True:
-        return 'b'
     else:
         return 'c'
 
