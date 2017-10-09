@@ -6,8 +6,8 @@
 #     move: A function that returns 'c' or 'b'
 ####
 
-team_name = 'Bleh' # Only 10 chars displayed.
-strategy_name = 'Tem'
+team_name = 'KalebAustn' # Only 10 chars displayed.
+strategy_name = 'Random, then tit 2 per tat'
 strategy_description = 'random choice, tit for 2 tat'
     
 def move(my_history, their_history, my_score, their_score):
